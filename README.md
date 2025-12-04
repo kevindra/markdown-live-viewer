@@ -1,6 +1,5 @@
 # Markdown Live Viewer
 
-[![npm version](https://badge.fury.io/js/markdown-live-viewer.svg)](https://www.npmjs.com/package/markdown-live-viewer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A beautiful, real-time markdown viewer with live reload support. Edit your markdown files and see changes instantly in your browser!
@@ -18,23 +17,13 @@ A beautiful, real-time markdown viewer with live reload support. Edit your markd
 
 ## Installation
 
-### Local Installation
-
 ```bash
-npm install
-```
-
-### Global Installation
-
-```bash
-npm link
+npm install -g markdown-live-viewer
 ```
 
 This installs the `mdview` command globally, making it available from anywhere on your system!
 
 ## Usage
-
-### Using the global command (recommended)
 
 ```bash
 # View any markdown file
@@ -43,33 +32,11 @@ mdview /path/to/your/file.md
 # View from current directory
 mdview README.md
 
-# View the MagentaSDK docs
-mdview ../docs.md
-```
-
-### Using npm start (local)
-
-```bash
-# Default (docs.md in parent directory)
-npm start
-
-# Specify a markdown file
-node server.js /path/to/your/file.md
-```
-
-### Examples
-
-```bash
-# Global command - use anywhere!
+# Examples
 mdview ~/Documents/my-notes.md
 mdview ./README.md
 mdview ../docs.md
-
-# From current directory
 mdview documentation.md
-
-# Local execution
-node server.js /path/to/your/file.md
 ```
 
 ## How It Works
@@ -134,16 +101,8 @@ Press `Ctrl+C` to stop the server gracefully.
 
 ## Uninstalling
 
-### Uninstall global command
-
 ```bash
-npm unlink -g markdown-live-viewer
-```
-
-or from the project directory:
-
-```bash
-npm unlink
+npm uninstall -g markdown-live-viewer
 ```
 
 ## Troubleshooting
@@ -166,3 +125,22 @@ npm unlink
 - ws - WebSocket support
 - chokidar - File watching
 - highlight.js - Syntax highlighting (CDN)
+
+## Development
+
+Want to contribute or run locally?
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/markdown-live-viewer.git
+cd markdown-live-viewer
+
+# Install dependencies
+npm install
+
+# Link for local development
+npm link
+
+# Run directly
+node server.js /path/to/your/file.md
+```
