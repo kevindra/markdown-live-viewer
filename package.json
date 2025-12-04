@@ -1,0 +1,46 @@
+{
+  "name": "markdown-live-viewer",
+  "version": "1.0.0",
+  "description": "🎨 Beautiful live markdown viewer with instant reload, syntax highlighting, and GitHub-style rendering",
+  "main": "server.js",
+  "bin": {
+    "mdview": "./bin/mdview.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindra/markdown-live-viewer.git"
+  },
+  "keywords": [
+    "markdown",
+    "viewer",
+    "live-reload",
+    "documentation",
+    "preview",
+    "markdown-preview",
+    "live-preview",
+    "watch",
+    "hot-reload",
+    "github-markdown",
+    "syntax-highlighting",
+    "cli"
+  ],
+  "author": "Kevindra Singh <kevindra.singh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevindra/markdown-live-viewer/issues"
+  },
+  "homepage": "https://github.com/kevindra/markdown-live-viewer#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "marked": "^11.1.1",
+    "ws": "^8.16.0",
+    "chokidar": "^3.5.3"
+  }
+}
